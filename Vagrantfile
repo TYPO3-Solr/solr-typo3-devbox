@@ -7,7 +7,7 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.box = "dkd/solr-typo3-devbox"
-  config.vm.box_version = "1.1.0"
+  config.vm.box_version = "1.5.2"
   config.vm.network :private_network, ip: "192.168.144.120"
 
   host = RbConfig::CONFIG['host_os']
@@ -39,7 +39,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       v.customize ["modifyvm", :id, "--memory", mem]
       v.customize ["modifyvm", :id, "--cpus", cpus]
-      v.gui = true
+      v.gui = false
   end
 
 end

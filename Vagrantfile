@@ -10,6 +10,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box_version = "1.5.2"
   config.vm.network :private_network, ip: "192.168.144.120"
 
+  config.ssh.forward_agent = true
+
   host = RbConfig::CONFIG['host_os']
 
   # Use nfs when running on a unix system

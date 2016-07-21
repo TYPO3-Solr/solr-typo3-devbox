@@ -15,13 +15,15 @@ vagrant up
 ```bash
 192.168.144.120   6.2.local.typo3.org
 192.168.144.120   7.6.local.typo3.org
+192.168.144.120   8.2.local.typo3.org
 192.168.144.120	  dev-master.local.typo3.org
 ```
 
-3. Login into TYPO3 6.2.x or 7.6.x or dev-master:
+3. Login into TYPO3 6.2.x or 7.6.x / 8.2.x or dev-master:
 
 * http://6.2.local.typo3.org/typo3/
 * http://7.6.local.typo3.org/typo3/
+* http://8.2.local.typo3.org/typo3/
 * http://dev-master.local.typo3.org/typo3/
 
 
@@ -33,22 +35,13 @@ Afterwards in the backend requeue all pages and re index and then check the fron
 
 4. Check solr:
 
-Create an ssh tunnel to your box:
+http://192.168.144.120:8081 For TYPO3 6.2
+http://192.168.144.120:8082 For TYPO3 7.6
+http://192.168.144.120:8083 For TYPO3 8,2
+http://192.168.144.120:8084 For TYPO3 dev-master
 
-```bash
-ssh -NL 127.0.0.1:8081:127.0.0.1:8081 vagrant@6.2.local.typo3.org
-ssh -NL 127.0.0.1:8082:127.0.0.1:8082 vagrant@7.6.local.typo3.org
-ssh -NL 127.0.0.1:8083:127.0.0.1:8083 vagrant@dev-master.local.typo3.org
-```
 
-ant then check:
-
-localhost:8081
-
-or one of the other forwarded ports
-
-## Thx
-
+#Thx 
 This box is based on and build with TYPO3.packer (https://github.com/Tuurlijk/TYPO3.Packer).
 Thx to Michiel Roos for starting this.
 

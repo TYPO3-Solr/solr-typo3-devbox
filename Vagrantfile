@@ -7,7 +7,7 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.box = "dkd/solr-typo3-devbox"
-  config.vm.box_version = "1.5.2"
+  config.vm.box_version = "1.8.3"
   config.vm.network :private_network, ip: "192.168.144.120"
 
   config.ssh.forward_agent = true

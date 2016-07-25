@@ -35,10 +35,10 @@ Afterwards in the backend requeue all pages and re index and then check the fron
 
 4. Check solr:
 
-http://192.168.144.120:8081 For TYPO3 6.2
-http://192.168.144.120:8082 For TYPO3 7.6
-http://192.168.144.120:8083 For TYPO3 8,2
-http://192.168.144.120:8084 For TYPO3 dev-master
+* http://192.168.144.120:8081 For TYPO3 6.2
+* http://192.168.144.120:8082 For TYPO3 7.6
+* http://192.168.144.120:8083 For TYPO3 8,2
+* http://192.168.144.120:8084 For TYPO3 dev-master
 
 
 #Thx 

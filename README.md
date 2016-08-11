@@ -16,7 +16,7 @@ vagrant up
 192.168.144.120   6.2.local.typo3.org
 192.168.144.120   7.6.local.typo3.org
 192.168.144.120   8.2.local.typo3.org
-192.168.144.120	  dev-master.local.typo3.org
+192.168.144.120   dev-master.local.typo3.org
 ```
 
 3. Login into TYPO3 6.2.x or 7.6.x / 8.2.x or dev-master:
@@ -27,8 +27,8 @@ vagrant up
 * http://dev-master.local.typo3.org/typo3/
 
 
-Username: admin
-Password: supersecret
+Username: admin  
+Password: supersecret  
 
 Afterwards in the backend requeue all pages and re index and then check the frontend.
 

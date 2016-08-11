@@ -30,7 +30,7 @@ vagrant up
 Username: admin  
 Password: supersecret  
 
-Afterwards in the backend requeue all pages and re index and then check the frontend.
+Afterwards in the backend requeue all pages and re-index and then check the frontend.
 
 
 4. Check solr:
@@ -41,8 +41,8 @@ Afterwards in the backend requeue all pages and re index and then check the fron
 * http://192.168.144.120:8084 For TYPO3 dev-master
 
 
-#Thx 
-This box is based on and build with TYPO3.packer (https://github.com/Tuurlijk/TYPO3.Packer).
+#Thanks & Credits
+This box is based on and built with TYPO3.packer (https://github.com/Tuurlijk/TYPO3.Packer).
 Thx to Michiel Roos for starting this.
 
 This project was created by using my working time @dkd. If you want to support this join or

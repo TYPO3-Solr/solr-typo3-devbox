@@ -1,6 +1,6 @@
 # solr-typo3-devbox
 
-Vagrant recipe to provsion a box with TYPO3 6.2.17 and 7.6.2 to try TYPO3 and tx_solr
+Vagrant recipe to provsion a box with TYPO3 6.2.x and 7.6.x to try TYPO3 and tx_solr
 
 ## How to start
 
@@ -23,7 +23,7 @@ vagrant up
 
 * http://6.2.local.typo3.org/typo3/
 * http://7.6.local.typo3.org/typo3/
-* http://8.2.local.typo3.org/typo3/
+* http://8.4.local.typo3.org/typo3/
 * http://dev-master.local.typo3.org/typo3/
 
 
@@ -37,7 +37,7 @@ Afterwards in the backend requeue all pages and re index and then check the fron
 
 * http://192.168.144.120:8081 For TYPO3 6.2
 * http://192.168.144.120:8082 For TYPO3 7.6
-* http://192.168.144.120:8083 For TYPO3 8,2
+* http://192.168.144.120:8083 For TYPO3 8.4
 * http://192.168.144.120:8084 For TYPO3 dev-master
 
 

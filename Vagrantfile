@@ -7,7 +7,7 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.box = "dkd/solr-typo3-devbox"
-  config.vm.box_version = "3.0.7"
+  config.vm.box_version = "3.9.0"
   # if you want to use a local box
   # config.vm.box_url = "file:///"
   config.vm.network :private_network, ip: "192.168.144.120"

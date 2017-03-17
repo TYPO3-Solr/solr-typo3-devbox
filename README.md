@@ -15,7 +15,7 @@ vagrant up
 ```bash
 192.168.144.120   6.2.local.typo3.org
 192.168.144.120   7.6.local.typo3.org
-192.168.144.120   8.5.local.typo3.org
+192.168.144.120   8.6.local.typo3.org
 192.168.144.120	  dev-master.local.typo3.org
 ```
 
@@ -23,7 +23,7 @@ vagrant up
 
 * http://6.2.local.typo3.org/typo3/
 * http://7.6.local.typo3.org/typo3/
-* http://8.5.local.typo3.org/typo3/
+* http://8.6.local.typo3.org/typo3/
 * http://dev-master.local.typo3.org/typo3/
 
 
@@ -37,7 +37,7 @@ Afterwards in the backend requeue all pages and re index and then check the fron
 
 * http://192.168.144.120:8081 For TYPO3 6.2
 * http://192.168.144.120:8082 For TYPO3 7.6
-* http://192.168.144.120:8083 For TYPO3 8.5
+* http://192.168.144.120:8083 For TYPO3 8.6
 * http://192.168.144.120:8084 For TYPO3 dev-master
 
 

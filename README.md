@@ -1,6 +1,6 @@
 # solr-typo3-devbox
 
-Vagrant recipe to provsion a box with TYPO3 6.2.x and 7.6.x to try TYPO3 and tx_solr
+Vagrant recipe to provision a box with TYPO3 6.2.x / 7.6.x / 8.7.x  to try TYPO3 and tx_solr
 
 ## How to start
 
@@ -15,16 +15,15 @@ vagrant up
 ```bash
 192.168.144.120   6.2.local.typo3.org
 192.168.144.120   7.6.local.typo3.org
-192.168.144.120   8.6.local.typo3.org
+192.168.144.120   8.7.local.typo3.org
 192.168.144.120	  dev-master.local.typo3.org
 ```
 
-3. Login into TYPO3 6.2.x or 7.6.x / 8.2.x or dev-master:
+3. Login into TYPO3 6.2.x or 7.6.x / 8.7.x:
 
 * http://6.2.local.typo3.org/typo3/
 * http://7.6.local.typo3.org/typo3/
-* http://8.6.local.typo3.org/typo3/
-* http://dev-master.local.typo3.org/typo3/
+* http://8.7.local.typo3.org/typo3/
 
 
 Username: admin
@@ -35,10 +34,10 @@ Afterwards in the backend requeue all pages and re index and then check the fron
 
 4. Check solr:
 
-* http://192.168.144.120:8081 For TYPO3 6.2
-* http://192.168.144.120:8082 For TYPO3 7.6
-* http://192.168.144.120:8083 For TYPO3 8.6
-* http://192.168.144.120:8084 For TYPO3 dev-master
+* http://192.168.144.120:8081 For TYPO3 6.2 (Solr 4.8)
+* http://192.168.144.120:8082 For TYPO3 7.6 (Solr 4.10)
+* http://192.168.144.120:8083 For TYPO3 8.7 (Solr 6.3)
+* http://192.168.144.120:8084 For TYPO3 8.7 (Solr 6.5)
 
 
 #Thx 

@@ -7,7 +7,7 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.box = "dkd/solr-typo3-devbox"
-  config.vm.box_version = "4.0.2"
+  config.vm.box_version = "4.3.1"
   # if you want to use a local box
   config.vm.network :private_network, ip: "192.168.144.120"
 
@@ -30,11 +30,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       if host =~ /darwin/
         cpus = `sysctl -n hw.ncpu`.to_i
         # sysctl returns Bytes and we need to convert to MB
-        mem = `sysctl -n hw.memsize`.to_i / 1024 / 1024 / 4
+        mem = `sysctl -n hw.memsize`.to_i / 1024 / 1024 / 2
       elsif host =~ /linux/
         cpus = `nproc`.to_i
         # meminfo shows KB and we need to convert to MB
-        mem = `grep 'MemTotal' /proc/meminfo | sed -e 's/MemTotal://' -e 's/ kB//'`.to_i / 1024 / 4
+        mem = `grep 'MemTotal' /proc/meminfo | sed -e 's/MemTotal://' -e 's/ kB//'`.to_i / 1024 / 2
       else
         cpus = 2
         mem = 4096

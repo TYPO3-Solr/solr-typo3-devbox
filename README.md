@@ -29,8 +29,13 @@ vagrant up
 Username: admin
 Password: supersecret
 
-Afterwards in the backend requeue all pages and re index and then check the frontend.
+Afterwards in the backend do the following steps: 
 
+* "Initialize Solr Connections" in the "Clear Cache" Dropdown.
+* In the Module "Index Queue":
+  * Requeue all pages and news.
+  * Re-index.
+* Go to the "Search" page in the Frontend and try the search.
 
 4. Check solr:
 

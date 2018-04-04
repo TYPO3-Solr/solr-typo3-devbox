@@ -1,4 +1,5 @@
-# solr-typo3-devbox
+# solr-typo3-devbox 
+# It is outdated, we'll use [Docker environment](https://github.com/TYPO3-Solr/docker-dev-environment) instead in near feature!
 
 Vagrant recipe to provision a box with TYPO3 7.6.x / 8.7.x  to try TYPO3 and tx_solr
 
